@@ -1,0 +1,65 @@
+How mongo db name found
+
+mongo db name found from work HUMONGOUS in 2007 and live in 2009
+
+Sql vs mongo
+
+Sql is relational database
+Sql use structured tables to store data in row
+suitable for application with well-defined schemas and fixed data structures
+E-commerce platform, HR Management etc
+example: MySql, PostgreSQL, Oracle
+
+MonogDB is non-relational database
+It provides flexibility scalability varied with data structure and types
+Ideal for application with dynamic and evolving data models
+CMS, Social Media, Gaming
+
+<!-- Mongo DB Terminolgies -->
+
+In a single data base we can have multiple collections and multiple collections
+
+documents in the form of JSON which is called document oriented
+
+document can also be schemaless
+
+<!-- By using ordered: false the correct documents will added and the error will be thrown -->
+
+<!-- Fields name are case sensative in collections name -->
+
+all the name must be in same manner like if we have used small letter for one and then we have to use same for others
+
+<!-- Read Operations in mongoDB -->
+
+db.collectionName.find()
+
+To find one document
+
+db.collectionName.findOne()
+
+To findMany documents
+
+db.collectionName.findMany()
+
+To find using specific data
+
+db.collectionName.findOne({name: "Vinay"})
+
+To find all data using specific data
+
+db.collectionName.find({name: "Vinay"})
+
+<!-- Import JSON in MongoDb -->
+
+<!-- Update in mongodb -->
+
+<!-- The first parameter is id and the second parameter will be value -->
+
+db.collectionName.updateOne()
+db.collectionName.updateMany()
+
+<!-- Example -->
+
+db.collectionName.updateOne({\_id: ObjectId("23746238434")}, {$set: { 'price': 45 }})
+
+<!-- Instead of id we can use any field like name, category and any unique identity -->
